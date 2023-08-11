@@ -1,0 +1,28 @@
+#Screen {
+    background-color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../../../assets/Images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .register-card {
+        width: 500px;
+    }
+}
+
+.register-header-image {
+    background-image: url('../../../../../assets/Images/Top icon.png');
+    background-size: cover;
+}
+
+.register-form {
+    min-width: 150px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.register-full-width {
+    width: 100%;
+}

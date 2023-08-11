@@ -1,5 +1,8 @@
 #Screen {
-    background-color: rgb(158, 158, 158);
+    /* background-color: rgb(158, 158, 158); */
+    background-image: url('../../../assets/Images/back.jpg');
+    background-position: center;
+
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -8,7 +11,7 @@
 
 .login-card {
     max-width: 350px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .login-image {
@@ -39,4 +42,7 @@ mat-error {
 
 .login-margin {
     margin: 0 12px;
+}
+mat-label{
+    color: rgb(6, 83, 248);
 }

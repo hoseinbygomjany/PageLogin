@@ -1,0 +1,51 @@
+<div id="Screen">
+    <mat-card class="register-card">
+        <mat-card-header>
+            <div mat-card-avatar class="register-header-image"></div>
+            <mat-card-title>سامانه سفارش غذا</mat-card-title>
+            <mat-card-subtitle>شرکت نوین نویسان</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="register-form">
+                <mat-form-field class="register-full-width">
+                    <mat-label>نام/نام خانوادگی</mat-label>
+                    <input type="text" matInput [formControl]="nameFormControl" placeholder="علی رضایی">
+                    <mat-error *ngIf="nameFormControl.hasError('required')">
+                        نام و نام خواندگی اجباریست
+                    </mat-error>
+                </mat-form-field>
+            </form>
+            <form class="register-form">
+                <mat-form-field class="register-full-width">
+                    <mat-label>ایمیل</mat-label>
+                    <input type="email" matInput  placeholder="hosein@gmail.com">
+                </mat-form-field>
+            </form>
+            <form class="register-form">
+                <mat-form-field class="register-full-width">
+                    <mat-label>شماره همراه</mat-label>
+                    <input type="tel" matInput [formControl]="phoneFormControl" placeholder="09xxxxxx">
+                    <mat-error *ngIf="nameFormControl.hasError('required')">
+                        شماره همراه اجباریست
+                    </mat-error>
+                </mat-form-field>
+            </form>
+            <form class="register-form">
+                <mat-form-field class="register-full-width">
+                    <mat-label>رمزعبور</mat-label>
+                    <input type="password" matInput [formControl]="passwordFormControl" placeholder="abcd1234">
+                    <mat-error *ngIf="nameFormControl.hasError('required')">
+                        شماره همراه اجباریست
+                    </mat-error>
+                </mat-form-field>
+                <mat-checkbox color="primary" class="login-margin">من را به خاطر بسپار</mat-checkbox>
+            </form>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">ثبت</button>&nbsp;&nbsp;
+            <button mat-raised-button color="accent">ورود</button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
